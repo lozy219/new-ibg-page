@@ -361,3 +361,10 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
   width: 90px;
   height: 90px;
 }
+
+
+#home-introduction {
+  font-size: 60px;
+  color: white;
+  font-family: 'Abel', sans-serif;
+}
