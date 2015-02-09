@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../font/CenturyGothic.ttf);
+}
+
 html {
   height: 100%;
 }
@@ -355,10 +360,57 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
+
 .navbar:hover {
   /*color: black;
   background: rgba(255, 255, 255, 0.5);*/
   opacity: 0.5;
+}
+
+.navbar > ul {
+  /*text-align: right;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 12px 0 0 0;
+  float: right;
+}
+.navbar > ul >li {
+  text-align: center;
+  font-family: 'Century Gothic';
+  font-size: 20px;
+  display: inline;
+  color: #505050;
+  margin: 0 25px;
+}
+
+.navbar > ul >li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.navbar > ul >li > a {
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.two:hover ~ hr {
+  margin-left: 37.5%;
+}
+
+.three:hover ~ hr {
+  margin-left: 71.5%;
+}
+
+hr {
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 5.5%;
+  height: 4px;
+  width: 20%;
+  background: #505050;
+  border: none;
+  transition: .3s ease-in-out;
 }
 
 #logo {
