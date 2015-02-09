@@ -183,7 +183,7 @@ header {
 }
 .main section .page_container {
   position: relative;
-  top: 25%;
+  top: 30%;
   margin: 0 auto 0;
   max-width: 950px;
   z-index: 3;
@@ -363,7 +363,20 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 
 
 #home-introduction {
-  font-size: 60px;
+  font-size: 70px;
+  color: #555557;
+  font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+    text-align: center;
+    padding-left: 250px;
+}
+
+#home-subintro {
+  font-size: 50px;
   color: white;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Pacifico', 'Open Sans Condensed', sans-serif;
+  position: relative;
+  text-align: right;
+  padding-top: 40px;
+  /*padding-left: 350px;*/
 }
