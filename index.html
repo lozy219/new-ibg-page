@@ -5,8 +5,12 @@
 	<title>iBeautyGuru</title>
 	<meta name="title" content="iBeautyGuru - Your beauty guider." />
 	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+
+  <!-- Font -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="static/js/jquery.onepage-scroll.js"></script>
   <link href='static/css/onepage-scroll.css' rel='stylesheet' type='text/css'>
@@ -374,13 +378,14 @@
       width: 90px;
       height: 90px;
     }
+
 	</style>
 	<script>
 	  $(document).ready(function(){
       $(".main").onepage_scroll({
         sectionContainer: "section",
         responsiveFallback: 600,
-        loop: true
+        loop: false
       });
 		});
 		
@@ -392,6 +397,7 @@
 
       <section class="page1">
         <div class="page_container">
+          <div id="home-introduction">iBeautyGuru</div>
         </div>
       </section>
 	    
