@@ -225,13 +225,19 @@ header {
   text-align: center;
 }
 .main section.page2 {
-  background: #555557 url(../img/back-phone.png) no-repeat center -150px ;
+  background: rgb(238, 242, 231);
 }
 .main section.page2 > img {
   position: absolute;
   top: -300px;
   left: 50%;
   margin-left: -1095px;
+}
+.main section.page2 .vertical-bar {
+  background-color: rgb(231, 122, 105);
+  margin-left: 70%;
+  height: 100vh;
+  width: 14px;
 }
 .main section.page2 .page_container {
   margin-top: 240px;
