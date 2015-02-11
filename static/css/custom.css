@@ -246,21 +246,31 @@ header {
   height: 100vh;
   width: 14px;
 }
+.main section.page2 .feature-section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 .main section.page2 .page_container {
-  /*margin-top: 240px;*/
+  margin-top: -10%;
+  margin-left: 15%;
   overflow: hidden;
   text-align: left;
 }
 .main section.page2 .feature-pic {
   display: inline;
 }
+.main section.page2 .feature-pic img {
+  height: 150px;
+  width: 150px;
+}
 .main section.page2 .feature-text {
-  font-family: sans-serif;
+  font-family: "Century Gothic", sans-serif;
   color: rgb(80, 80, 80);
   display: inline;
 }
 .main section.page2 .feature-text-title {
-  font-size: 50px;
+  font-weight: 900;
+  font-size: 60px;
   display: inline;
 }
 .main section.page2 .feature-text-content {
