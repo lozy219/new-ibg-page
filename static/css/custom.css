@@ -277,6 +277,11 @@ header {
   font-size: 20px;
   display: inline;
 }
+.main section.page2 .download {
+  position: absolute;
+  left: 50%;
+}
+
 .main section.page2 h1 {
   text-align: center;
   padding: 0;
