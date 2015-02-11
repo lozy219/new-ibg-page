@@ -190,7 +190,7 @@ header {
   position: relative;
   top: 30%;
   margin: 0 auto 0;
-  max-width: 950px;
+  max-width: 100%;
   z-index: 3;
 }
 .main section  {
@@ -253,6 +253,7 @@ header {
 .main section.page2 .page_container {
   margin-top: -10%;
   margin-left: 15%;
+  margin-right: 0;
   overflow: hidden;
   text-align: left;
 }
@@ -279,9 +280,22 @@ header {
 }
 .main section.page2 .download {
   position: absolute;
-  left: 50%;
+  left: 72%;
+  top: 5%;
 }
-
+.main section.page2 .download-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main section.page2 .download-pic {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main section.page2 #download-qr {
+  width: 300px;
+  height: 300px;
+}
 .main section.page2 h1 {
   text-align: center;
   padding: 0;
