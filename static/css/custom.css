@@ -290,12 +290,18 @@ header {
   text-align: center;
 }
 .main section.page2 .download-pic {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .main section.page2 #download-qr {
-  width: 300px;
-  height: 300px;
+  width: 15vw;
+  height: 15vw;
+}
+.main section.page2 #download-android {
+  width: 15vw;
+}
+.main section.page2 #download-ios {
+  width: 15vw;
 }
 .main section.page2 h1 {
   text-align: center;
