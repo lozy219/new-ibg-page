@@ -247,8 +247,8 @@ header {
   width: 14px;
 }
 .main section.page2 .feature-section {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   height: 20vh;
 }
 .main section.page2 .page_container {
