@@ -262,8 +262,8 @@ header {
   display: inline;
 }
 .main section.page2 .feature-pic img {
-  height: 150px;
-  width: 150px;
+  height: 10vw;
+  width: 10vw;
 }
 .main section.page2 .feature-text {
   font-family: "Century Gothic", sans-serif;
@@ -272,11 +272,11 @@ header {
 }
 .main section.page2 .feature-text-title {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 4vw;
   display: inline;
 }
 .main section.page2 .feature-text-content {
-  font-size: 20px;
+  font-size: 2vw;
   display: inline;
 }
 .main section.page2 .download {
