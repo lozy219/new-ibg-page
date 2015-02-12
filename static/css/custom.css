@@ -190,7 +190,7 @@ header {
   position: relative;
   top: 30%;
   margin: 0 auto 0;
-  max-width: 950px;
+  max-width: 100%;
   z-index: 3;
 }
 .main section  {
@@ -247,12 +247,14 @@ header {
   width: 14px;
 }
 .main section.page2 .feature-section {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 20vh;
 }
 .main section.page2 .page_container {
   margin-top: -10%;
   margin-left: 15%;
+  margin-right: 0;
   overflow: hidden;
   text-align: left;
 }
@@ -260,8 +262,8 @@ header {
   display: inline;
 }
 .main section.page2 .feature-pic img {
-  height: 150px;
-  width: 150px;
+  height: 10vw;
+  width: 10vw;
 }
 .main section.page2 .feature-text {
   font-family: "Century Gothic", sans-serif;
@@ -270,18 +272,37 @@ header {
 }
 .main section.page2 .feature-text-title {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 4vw;
   display: inline;
 }
 .main section.page2 .feature-text-content {
-  font-size: 20px;
+  font-size: 2vw;
   display: inline;
 }
 .main section.page2 .download {
   position: absolute;
-  left: 50%;
+  left: 72%;
+  top: 5%;
 }
-
+.main section.page2 .download-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main section.page2 .download-pic {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.main section.page2 #download-qr {
+  width: 15vw;
+  height: 15vw;
+}
+.main section.page2 #download-android {
+  width: 15vw;
+}
+.main section.page2 #download-ios {
+  width: 15vw;
+}
 .main section.page2 h1 {
   text-align: center;
   padding: 0;
@@ -398,14 +419,14 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 .navbar:hover {
   /*color: black;
   background: rgba(255, 255, 255, 0.5);*/
-  opacity: 0.5;
+  /*opacity: 1;*/
 }
 
 .navbar > ul {
   /*text-align: right;*/
   list-style-type: none;
   margin: 0;
-  padding: 12px 0 0 0;
+  padding: 8px 0 0 0;
   float: right;
 }
 .navbar > ul >li {
@@ -450,8 +471,10 @@ hr {
 #logo {
   float: left;
   margin-left: 10px;
-  width: 90px;
-  height: 90px;
+  margin-top: -12px;
+  width: 120px;
+  height: 120px;
+  position: relative;
 }
 
 
