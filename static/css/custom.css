@@ -249,6 +249,7 @@ header {
 .main section.page2 .feature-section {
   margin-top: 70px;
   margin-bottom: 70px;
+  height: 20vh;
 }
 .main section.page2 .page_container {
   margin-top: -10%;
