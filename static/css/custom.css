@@ -204,8 +204,14 @@ header {
 }
 
 .main section.page1 {
-  background: url(../img/homepage/background.jpg) no-repeat center;
+  /*background: url(../img/homepage/background.jpg) no-repeat center;*/
   background-size: cover;
+}
+.main section.page1 .home-carousel {
+  height: 100vh
+}
+.main section.page1 .carousel-control {
+  background-image: none;
 }
 .main section.page1 h1 {
   text-align: left;
