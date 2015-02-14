@@ -282,6 +282,7 @@ header {
   width: 10vw;
 }
 .main section.page2 .feature-text {
+  margin-top: 1vh;
   font-family: "Century Gothic", sans-serif;
   color: rgb(80, 80, 80);
   display: inline;
