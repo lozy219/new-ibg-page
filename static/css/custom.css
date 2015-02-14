@@ -210,8 +210,12 @@ header {
 .main section.page1 .page_container {
   top: 0%;
 }
-.main section.page1 .home-carousel {
-  height: 100vh
+.main section.page1 .home-carousel .item {
+  height: 100vh;
+}
+.main section.page1 .home-carousel img {
+  height: auto;
+  width: 100%;
 }
 .main section.page1 .carousel-control {
   background-image: none;
@@ -228,6 +232,9 @@ header {
   text-align: center;
   width: 435px;
   line-height: 160%;
+}
+.main section.page1 .carousel-inner img {
+
 }
 .main section .page_container .btns {
   clear: both;
