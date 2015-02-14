@@ -207,6 +207,9 @@ header {
   /*background: url(../img/homepage/background.jpg) no-repeat center;*/
   background-size: cover;
 }
+.main section.page1 .page_container {
+  top: 0%;
+}
 .main section.page1 .home-carousel {
   height: 100vh
 }
