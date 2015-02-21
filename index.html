@@ -1,205 +1,217 @@
 <!doctype html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>iBeautyGuru</title>
-	<meta name="title" content="iBeautyGuru - Your beauty guider." />
-	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+    <meta charset="utf-8">
+    <title>iBeautyGuru</title>
+    <meta name="title" content="iBeautyGuru - Your beauty guider." />
+    <link rel="shortcut icon" id="favicon" href="favicon.png">
 
-  <!-- Font -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico' rel='stylesheet' type='text/css'>
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="static/js/jquery.onepage-scroll.js"></script>
-  <script type="text/javascript" src="static/js/onepage-delegate.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.onepage-scroll.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-  <link href='static/css/onepage-scroll.css' rel='stylesheet' type='text/css'>
-  <link href='static/css/custom.css' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href='static/css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link href='static/css/custom.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-	<script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        beforeMove: pageWillScrollTo,
-        loop: false
-      });
+    <script>
+    $(document).ready(function() {
+        $(".main").onepage_scroll({
+            sectionContainer: "section",
+            responsiveFallback: 600,
+            beforeMove: pageWillScrollTo,
+            loop: false
+        });
 
-      // go to top
-      $('#logo').click(function() {
-          $(".main").moveTo(1);
-      });
-		});
-
-	</script>
+        // go to top
+        $('#logo').click(function() {
+            $(".main").moveTo(1);
+        });
+    });
+    </script>
 </head>
+
 <body>
-  <div class="wrapper">
-	  <div class="main">
+    <div class="wrapper">
+        <div class="main">
 
-      <section class="page1">
-        <div class="page_container">
-         <div id="carousel-example-generic" class="carousel slide home-carousel" data-ride="carousel" data-interval="3000">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
+            <section class="page1">
+                <div class="page_container">
+                    <div id="title-carousel-slide">iBeautyGuru</div>
+                    <div id="subtitle-carousel-slide">Grab the beauty in your hands</div>
+                    <a id="subtitle-carousel-button" href="beauty">Surf the latest designs now</a>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="static/img/homepage/background-1.jpg" alt="...">
-            </div>
-            <div class="item">
-              <img src="static/img/homepage/background-2.jpg" alt="...">
-            </div>
-            <div class="item">
-              <img src="static/img/homepage/background-3.png" alt="...">
-            </div>
-          </div>
+                    <div id="carousel-example-generic" class="carousel slide home-carousel" data-ride="carousel" data-interval="3000">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
 
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div> <!-- Carousel -->
-      </div>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="static/img/homepage/background-1.jpg" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="static/img/homepage/background-2.jpg" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="static/img/homepage/background-3.png" alt="...">
+                            </div>
+                        </div>
 
-    </section>
-	    
-
-      <section class="page2">
-        <div class="page_container">
-          <div class="features-container">
-            <div class="feature">
-              <div class="feature-section row">
-                <div class="feature-pic col-md-2">
-                  <img id="feature-rate" src="static/img/features/check.png" />
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                    <!-- Carousel -->
                 </div>
-                <div class="feature-text col-md-8">
-                  <div class="feature-text-title">check</div>
-                  <br />
-                  <div class="feature-text-content">the trendy style</div>
+
+            </section>
+
+
+            <section class="page2">
+                <div class="page_container">
+                    <div class="features-container">
+                        <div class="feature">
+                            <div class="feature-section row">
+                                <div class="feature-pic col-md-2">
+                                    <img id="feature-rate" src="static/img/features/check.png" />
+                                </div>
+                                <div class="feature-text col-md-8">
+                                    <div class="feature-text-title">check</div>
+                                    <br />
+                                    <div class="feature-text-content">the trendy style</div>
+                                </div>
+                            </div>
+
+                            <div class="feature-section row">
+                                <div class="feature-pic col-md-2">
+                                    <img id="feature-rate" src="static/img/features/book.png" />
+                                </div>
+                                <div class="feature-text col-md-8">
+                                    <div class="feature-text-title"><b>book</b>
+                                    </div>
+                                    <br />
+                                    <div class="feature-text-content">your favorite style and timing</div>
+                                </div>
+                            </div>
+
+                            <div class="feature-section row">
+                                <div class="feature-pic col-md-2">
+                                    <img id="feature-rate" src="static/img/features/rate.png" />
+                                </div>
+                                <div class="feature-text col-md-8">
+                                    <div class="feature-text-title">rate & review</div>
+                                    <br />
+                                    <div class="feature-text-content">on your experience</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="download">
+                            <div class="download-section row">
+                                <div class="download-pic col-md-12">
+                                    <img id="download-qr" src="static/img/features/qr-code.png" />
+                                </div>
+                            </div>
+
+                            <div class="download-section row">
+                                <div class="download-pic col-md-12">
+                                    <img id="download-ios" src="static/img/features/app-store.png" />
+                                </div>
+                            </div>
+
+                            <div class="download-section row">
+                                <div class="download-pic col-md-12">
+                                    <img id="download-android" src="static/img/features/google-play.png" />
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
-              </div>
+                <div class="vertical-bar"></div>
 
-              <div class="feature-section row">
-                <div class="feature-pic col-md-2">
-                  <img id="feature-rate" src="static/img/features/book.png" />
-                </div>
-                <div class="feature-text col-md-8">
-                  <div class="feature-text-title"><b>book</b></div>
-                  <br />
-                  <div class="feature-text-content">your favorite style and timing</div>
-                </div>
-              </div>
-
-              <div class="feature-section row">
-                <div class="feature-pic col-md-2">
-                  <img id="feature-rate" src="static/img/features/rate.png" />
-                </div>
-                <div class="feature-text col-md-8">
-                  <div class="feature-text-title">rate & review</div>
-                  <br />
-                  <div class="feature-text-content">on your experience</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="download">
-              <div class="download-section row">
-                <div class="download-pic col-md-12">
-                  <img id="download-qr" src="static/img/features/qr-code.png" />
-                </div>
-              </div>
-
-              <div class="download-section row">
-                <div class="download-pic col-md-12">
-                  <img id="download-ios" src="static/img/features/app-store.png" />
-                </div>
-              </div>
-
-              <div class="download-section row">
-                <div class="download-pic col-md-12">
-                  <img id="download-android" src="static/img/features/google-play.png" />
-                </div>
-              </div>
-              
-              </div>
+            </section>
 
 
-          </div>
-
-        </div>
-        <div class="vertical-bar"></div>
-
-      </section>
-
-
-      <!-- <section class="page1">
+            <!-- <section class="page1">
         <div class="page_container">
           <h1>One Page Scroll</h1>
           <h2>Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin</h2>
           <p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p>
           <div class="btns">
-  	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
-  	      </div>
-  	    </div>
-  	    <img src="static/img/phones.png" alt="phones">
+            <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          </div>
+        </div>
+        <img src="static/img/phones.png" alt="phones">
       </section> 
-	    
-	    <section class="page2">
-	      <div class="page_container">
+      
+      <section class="page2">
+        <div class="page_container">
           <h1>Ready-to-use plugin</h1>
           <h2>All you need is an HTML markup, call the script and BAM!</h2>
           <code class="html">
-  	        &lt;div class="main"&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          ...<br>
-  	        &lt;/div&gt;
-  	      </code>
-  	      
-  	      <code class="js">
-	          $(".main").onepage_scroll();
-	        </code>
-	      </div>
+            &lt;div class="main"&gt;<br>
+              &lt;section&gt;...&lt;/section&gt;<br>
+              &lt;section&gt;...&lt;/section&gt;<br>
+              ...<br>
+            &lt;/div&gt;
+          </code>
+          
+          <code class="js">
+            $(".main").onepage_scroll();
+          </code>
+        </div>
       </section>
       -->
-	    
-	    <!-- <section class="page3">
-	      <div class="page_container">
+
+            <!-- <section class="page3">
+        <div class="page_container">
           <h1>Pretty Neat Eh?</h1>
           <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
           
           <div class="btns">
-  	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
-  	      </div>
-  	    </div>
+            <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          </div>
+        </div>
       </section> -->
+        </div>
+        <div class="navbar">
+            <a href="http://m.ibeautyguru.com/"><img id="logo" src="static/img/logo.png" />
+            </a>
+            <ul>
+                <li class="one"><a href="javascript: $('.main').moveTo(1);">home</a>
+                </li>
+                <li class="two"><a href="javascript: $('.main').moveTo(2);">about</a>
+                </li>
+                <li class="three"><a href="#">contact</a>
+                </li>
+                <hr />
+            </ul>
+        </div>
+        <!-- <a href="https://github.com/peachananr/onepage-scroll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> -->
     </div>
-    <div class="navbar">
-      <a href="http://m.ibeautyguru.com/"><img id="logo" src="static/img/logo.png" /></a>
-      <ul>
-        <li class="one"><a href="javascript: $('.main').moveTo(1);">home</a></li>
-        <li class="two"><a href="javascript: $('.main').moveTo(2);">about</a></li>
-        <li class="three"><a href="#">contact</a></li>
-        <hr />
-      </ul>
-    </div>
-    <!-- <a href="https://github.com/peachananr/onepage-scroll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> -->
-  </div>
+    <script type="text/javascript" src="static/js/onepage-delegate.js"></script>
 </body>
+
 </html>
