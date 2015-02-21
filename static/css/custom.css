@@ -436,28 +436,34 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 .navbar > ul >li:hover {
     color: black;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .navbar > ul >li > a {
     margin: 0;
     text-decoration: none;
     color: #333;
 }
-.two:hover ~ hr {
-    margin-left: 37.5%;
-}
-.three:hover ~ hr {
-    margin-left: 71.5%;
-}
 hr {
     margin: 0;
+    margin-left: 15%;
     margin-top: 7px;
-    margin-left: 5.5%;
     height: 4px;
-    width: 20%;
+    width: 30%;
     background: #505050;
     border: none;
     transition: .3s ease-in-out;
+}
+.one:hover ~ hr {
+    margin-left: 15%;
+}
+.two:hover ~ hr {
+    margin-left: 67%;
+}
+#hr-1 {
+    margin-left: 15%;
+}
+#hr-2 {
+    margin-left: 67%;
 }
 #logo {
     float: left;
