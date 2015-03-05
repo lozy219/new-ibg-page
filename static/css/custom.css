@@ -534,3 +534,98 @@ hr {
     line-height: 1.5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 }
+
+@-webkit-keyframes scroll-indicate {
+    0% {
+        opacity: 1; 
+    }
+    
+    20% {
+        opacity: 0;
+    }
+    
+    40% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes scroll-indicate {
+    0% {
+        opacity: 1; 
+    }
+    
+    20% {
+        opacity: 0;
+    }
+    
+    40% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.scrollIndicator {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+}
+
+.scrollIndicator::before {
+    //animation: scroll-indicate 1s linear 0s infinite alternate;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    transform: rotate(-45deg);
+
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+
+    content: "";
+    top: 0px;
+    left: 50%;
+    margin-left: -6px;
+
+    -webkit-animation: scroll-indicate 2s linear 0s infinite;
+    animation: scroll-indicate 2s linear 0s infinite;
+}
+
+.scrollIndicator::after {
+    //animation: scroll-indicate 1s linear 0s infinite alternate;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    transform: rotate(-45deg);
+
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+
+    content: "";
+    top: 10px;
+    left: 50%;
+    margin-left: -6px;
+    -webkit-animation: scroll-indicate 2s linear 0.25s infinite;
+    animation: scroll-indicate 2s linear 0.25s infinite;
+}
+
+.carousel-indicators {
+    position: absolute;
+    left: 49.4%;
+    z-index: 15;
+    padding-left: 0;
+    width: inherit;
+    margin-left: 0;
+    bottom: 6%;
+}
