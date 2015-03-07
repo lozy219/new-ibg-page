@@ -428,7 +428,7 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 .navbar > ul >li {
     text-align: center;
-    font-family: 'Century Gothic';
+    font-family: 'Lato';
     font-size: 20px;
     display: inline;
     color: #505050;
@@ -492,7 +492,7 @@ hr {
 }
 #title-carousel-slide {
     position: absolute;
-    top: 30%;
+    top: 27.3%;
     left: calc(50% - 343px);
     z-index: 999;
     /*    text-transform: uppercase;*/
@@ -528,7 +528,7 @@ hr {
     font-weight: 800;
     z-index: 999;
     color: white;
-    font-family: 'Lato', Georgia, serif;
+    font-family: "Lato", Georgia, serif;
     font-size: 20px;
     padding: 10px;
     line-height: 1.5;
@@ -575,20 +575,20 @@ hr {
 
 .scrollIndicator {
     position: absolute;
-    width: 100%;
+    height: 40px;
     top: 90%;
 }
 
 .scrollIndicator::before {
     //animation: scroll-indicate 1s linear 0s infinite alternate;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 
     transform: rotate(-45deg);
 
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.35);
+    border-left: 5px solid rgba(255, 255, 255, 0.35);
     box-sizing: border-box;
 
     content: "";
@@ -603,21 +603,31 @@ hr {
 .scrollIndicator::after {
     //animation: scroll-indicate 1s linear 0s infinite alternate;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 
     transform: rotate(-45deg);
 
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.35);
+    border-left: 5px solid rgba(255, 255, 255, 0.35);
     box-sizing: border-box;
 
     content: "";
-    top: 10px;
+    top: 12px;
     left: 50%;
     margin-left: -6px;
     -webkit-animation: scroll-indicate 2s linear 0.25s infinite;
     animation: scroll-indicate 2s linear 0.25s infinite;
+}
+
+.scrollIndicator:hover::after {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+    border-left: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+.scrollIndicator:hover::before {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+    border-left: 5px solid rgba(255, 255, 255, 0.8);
 }
 
 .carousel-indicators {

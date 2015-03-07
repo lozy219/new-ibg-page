@@ -8,9 +8,7 @@
     <link rel="shortcut icon" id="favicon" href="favicon.png">
 
     <!-- Font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico' rel='stylesheet' type='text/css'>
+    <link href='static/css/font.css' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -23,23 +21,7 @@
     <link href='static/css/custom.css' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-    <script>
-    $(document).ready(function() {
-        $(".main").onepage_scroll({
-            sectionContainer: "section",
-            responsiveFallback: 600,
-            beforeMove: pageWillScrollTo,
-            loop: false
-        });
-
-        // go to top
-        $('#logo').click(function() {
-            $(".main").moveTo(1);
-        });
-
-        console.log($(".main"));
-    });
-    </script>
+    <script src='static/js/custom.js'></script>
 </head>
 
 <body>
@@ -54,11 +36,11 @@
 
                     <div id="carousel-example-generic" class="carousel slide home-carousel" data-ride="carousel" data-interval="3000">
                         <!-- Indicators -->
-                        <ol class="carousel-indicators">
+                        <!-- <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
+                        </ol> -->
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
@@ -82,7 +64,7 @@
                         </a>
                     </div>
                     <!-- Carousel -->
-                    <div class="scrollIndicator"></div>
+                    <a class="scrollIndicator" href="#"></a>
                 </div>
 
             </section>
