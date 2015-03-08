@@ -585,6 +585,7 @@ hr {
     width: 20px;
     height: 20px;
 
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 
     border-bottom: 5px solid rgba(255, 255, 255, 0.35);
@@ -606,6 +607,7 @@ hr {
     width: 20px;
     height: 20px;
 
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 
     border-bottom: 5px solid rgba(255, 255, 255, 0.35);
