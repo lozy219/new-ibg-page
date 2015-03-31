@@ -163,6 +163,14 @@ section {
 #homepage {
 	$button-width : 320px;
 
+	a {
+		color: #AAA;
+
+		&:hover {
+			color: #000	;
+		}
+	}
+
 	#homepage-background {
 		z-index: -1;
 		overflow: hidden;
@@ -235,7 +243,7 @@ section {
 		}
 
 		>div {
-			padding-top: 25px;
+			padding-top: 19px;
 		}
 	}
 	#homepage-intro {
