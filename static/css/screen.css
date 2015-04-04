@@ -283,6 +283,10 @@ body {
   height: 67px;
 }
 /* line 243, ../sass/screen.scss */
+#about .download #qr-code {
+  float: right;
+}
+/* line 248, ../sass/screen.scss */
 #about .about-container {
   top: 90px;
   width: 60%;
