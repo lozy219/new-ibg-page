@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 
+$container-width : 681px;
 $mid-width: 768px;
 $theme-color: rgb(238, 242, 231);
 $main-font: 'Lato';
@@ -33,6 +34,24 @@ $main-font: 'Lato';
 	transition: $transition;
 }
 
+@mixin title() {
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+@mixin container() {
+	width: $container-width;
+	margin-left: calc((100% - #{$container-width}) / 2);
+	position: relative;
+
+	@media screen and (max-width: $mid-width) {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
 a {
 	text-decoration: none;
 
@@ -43,6 +62,10 @@ a {
 
 body {
 	background: $theme-color;
+}
+
+section {
+	margin-bottom: 70px;
 }
 
 // navbar style
@@ -222,18 +245,37 @@ body {
 
 	font-family: $main-font;
 	.title {
-		font-size: 40px;
-		font-weight: 700;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		@include title();
 	}
 
 	.content {
 		line-height: 190%;
 	}
 
+	.about-container {
+		top: 90px;
+		@include container();
+	}
+}
+
+
+// app style
+
+#app {
+	font-family: $main-font;
+
+	.title {
+		@include title();
+	}
+
+	.intro {
+		margin-top: 80px;
+		font-weight: 900;
+		line-height: 150%;
+	}
+
 	.download {
-		margin-top: 30px;
+		margin-top: 10px;
 
 		.download-pic {
 			height: 67px;
@@ -258,21 +300,10 @@ body {
 				float: inherit;
 			}
 		}
-
-		
 	}
 
-	.about-container {
-		$container-width : 680px;
+	.app-container {
 		top: 90px;
-		width: $container-width;
-		margin-left: calc((100% - #{$container-width}) / 2);
-		position: relative;
-
-		@media screen and (max-width: $mid-width) {
-			width: 80%;
-			margin-left: 10%;
-		}
-
+		@include container();
 	}
 }

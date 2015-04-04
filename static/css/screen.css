@@ -71,21 +71,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: CenturyGothic;
   src: url(../font/CenturyGothic.ttf);
 }
-/* line 36, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
-/* line 39, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 body {
   background: #eef2e7;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
+section {
+  margin-bottom: 70px;
+}
+
+/* line 72, ../sass/screen.scss */
 .navbar {
   position: fixed;
   top: 0;
@@ -109,13 +114,13 @@ body {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 68, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .navbar #navbar > ul {
   list-style-type: none;
   margin: 0;
   float: right;
 }
-/* line 77, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .navbar #navbar > ul > li {
   text-align: center;
   font-family: "Lato";
@@ -124,11 +129,11 @@ body {
   color: #505050;
   margin: 0 5px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .navbar #navbar > ul > li:hover {
   color: #000000;
 }
-/* line 89, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .navbar #navbar > ul > li > a {
   margin: 0;
   text-decoration: none;
@@ -138,11 +143,11 @@ body {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 95, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .navbar #navbar > ul > li > a:hover {
   color: #333;
 }
-/* line 102, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .navbar #logo {
   float: left;
   margin-left: -10px;
@@ -151,16 +156,16 @@ body {
   height: 120px;
 }
 @media screen and (max-width: 768px) {
-  /* line 102, ../sass/screen.scss */
+  /* line 125, ../sass/screen.scss */
   .navbar #logo {
     display: none;
   }
 }
-/* line 113, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .navbar #toggle {
   margin-top: 5px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .navbar #ibeauty {
   display: none;
   font-family: "Lato";
@@ -168,39 +173,39 @@ body {
   margin-top: -5px;
 }
 @media screen and (max-width: 768px) {
-  /* line 117, ../sass/screen.scss */
+  /* line 140, ../sass/screen.scss */
   .navbar #ibeauty {
     display: inherit;
   }
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #homepage #homepage-background {
   z-index: -1;
 }
-/* line 138, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #homepage .homepage-info {
   top: 20vh;
   width: 80%;
   margin-left: 10%;
   position: absolute;
 }
-/* line 144, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #homepage .homepage-info .title {
   font-size: 18px;
   padding-top: 25px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #homepage .homepage-info .col-sm-offset-7 {
   margin-left: calc(100% - 320px);
 }
 @media screen and (max-width: 768px) {
-  /* line 154, ../sass/screen.scss */
+  /* line 177, ../sass/screen.scss */
   #homepage .homepage-info .col-sm-offset-7 {
     margin-left: calc((100% - 320px) / 2);
   }
 }
-/* line 159, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #homepage .homepage-info .content {
   font-size: 14px;
   width: 80%;
@@ -210,18 +215,18 @@ body {
   line-height: 160%;
   padding-bottom: 25px;
 }
-/* line 168, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 #homepage .homepage-info .content strong {
   font-weight: 700 !important;
 }
-/* line 174, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 #homepage .homepage-buttons {
   top: 60vh;
   text-align: right;
   right: 40px;
   width: 520px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #homepage .homepage-button {
   font-family: "Lato";
   font-weight: bold;
@@ -235,83 +240,115 @@ body {
   height: 70px;
 }
 @media screen and (max-width: 768px) {
-  /* line 181, ../sass/screen.scss */
+  /* line 204, ../sass/screen.scss */
   #homepage .homepage-button {
     width: inherit;
     max-width: 320px;
   }
 }
-/* line 200, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 #homepage .homepage-button .fa {
   font-size: 25px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 #homepage .homepage-button > div {
   padding-top: 25px;
 }
-/* line 208, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #homepage #homepage-intro {
   border-radius: 20px 20px 0 0;
   height: 100%;
 }
-/* line 213, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #homepage #homepage-web {
   border-radius: 0 0 20px 20px;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #about {
   font-family: "Lato";
 }
-/* line 224, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 #about .title {
   font-size: 40px;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 231, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 #about .content {
   line-height: 190%;
 }
-/* line 235, ../sass/screen.scss */
-#about .download {
-  margin-top: 30px;
+/* line 255, ../sass/screen.scss */
+#about .about-container {
+  top: 90px;
+  width: 681px;
+  margin-left: calc((100% - 681px) / 2);
+  position: relative;
 }
-/* line 238, ../sass/screen.scss */
-#about .download .download-pic {
+@media screen and (max-width: 768px) {
+  /* line 255, ../sass/screen.scss */
+  #about .about-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+/* line 264, ../sass/screen.scss */
+#app {
+  font-family: "Lato";
+}
+/* line 267, ../sass/screen.scss */
+#app .title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 271, ../sass/screen.scss */
+#app .intro {
+  margin-top: 80px;
+  font-weight: 900;
+  line-height: 150%;
+}
+/* line 277, ../sass/screen.scss */
+#app .download {
+  margin-top: 10px;
+}
+/* line 280, ../sass/screen.scss */
+#app .download .download-pic {
   height: 67px;
 }
-/* line 242, ../sass/screen.scss */
-#about .download #qr-code {
+/* line 284, ../sass/screen.scss */
+#app .download #qr-code {
   float: right;
 }
 @media screen and (max-width: 768px) {
-  /* line 247, ../sass/screen.scss */
-  #about .download .download-pic {
+  /* line 289, ../sass/screen.scss */
+  #app .download .download-pic {
     height: auto;
     width: 200px;
     margin-top: 5px;
   }
-  /* line 253, ../sass/screen.scss */
-  #about .download .pic {
+  /* line 295, ../sass/screen.scss */
+  #app .download .pic {
     text-align: center;
   }
-  /* line 257, ../sass/screen.scss */
-  #about .download #qr-code {
+  /* line 299, ../sass/screen.scss */
+  #app .download #qr-code {
     float: inherit;
   }
 }
-/* line 265, ../sass/screen.scss */
-#about .about-container {
+/* line 305, ../sass/screen.scss */
+#app .app-container {
   top: 90px;
-  width: 680px;
-  margin-left: calc((100% - 680px) / 2);
+  width: 681px;
+  margin-left: calc((100% - 681px) / 2);
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 265, ../sass/screen.scss */
-  #about .about-container {
+  /* line 305, ../sass/screen.scss */
+  #app .app-container {
     width: 80%;
     margin-left: 10%;
   }
