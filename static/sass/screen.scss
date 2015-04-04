@@ -237,19 +237,42 @@ body {
 
 		.download-pic {
 			height: 67px;
-
 		}
-		
+
 		#qr-code {
 			float: right;
 		}
+
+		@media screen and (max-width: $mid-width) {
+			.download-pic {
+				height: auto;
+				width: 200px;
+				margin-top: 5px;
+			}
+
+			.pic {
+				text-align: center;
+			}
+
+			#qr-code {
+				float: inherit;
+			}
+		}
+
+		
 	}
 
 	.about-container {
+		$container-width : 680px;
 		top: 90px;
-		width: 60%;
-		margin-left: 20%;
+		width: $container-width;
+		margin-left: calc((100% - #{$container-width}) / 2);
 		position: relative;
+
+		@media screen and (max-width: $mid-width) {
+			width: 80%;
+			margin-left: 10%;
+		}
 
 	}
 }

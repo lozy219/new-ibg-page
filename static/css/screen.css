@@ -282,14 +282,37 @@ body {
 #about .download .download-pic {
   height: 67px;
 }
-/* line 243, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #about .download #qr-code {
   float: right;
 }
-/* line 248, ../sass/screen.scss */
+@media screen and (max-width: 768px) {
+  /* line 247, ../sass/screen.scss */
+  #about .download .download-pic {
+    height: auto;
+    width: 200px;
+    margin-top: 5px;
+  }
+  /* line 253, ../sass/screen.scss */
+  #about .download .pic {
+    text-align: center;
+  }
+  /* line 257, ../sass/screen.scss */
+  #about .download #qr-code {
+    float: inherit;
+  }
+}
+/* line 265, ../sass/screen.scss */
 #about .about-container {
   top: 90px;
-  width: 60%;
-  margin-left: 20%;
+  width: 680px;
+  margin-left: calc((100% - 680px) / 2);
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 265, ../sass/screen.scss */
+  #about .about-container {
+    width: 80%;
+    margin-left: 10%;
+  }
 }

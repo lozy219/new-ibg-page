@@ -5,6 +5,14 @@ $(document).ready(function(){
 	$('#logo').click(function() {
 		$(".main").moveTo(1);
 	});
+
+	// $('a.page-scroll').bind('click', function(event) {
+	// 	var $anchor = $(this);
+	// 	$('html, body').stop().animate({
+	// 		scrollTop: $($anchor.attr('href')).offset().top - 42
+	// 	}, 1500, 'easeInOutExpo');
+	// 	event.preventDefault();
+	// });
 });
 
 function resizeBackground() {
