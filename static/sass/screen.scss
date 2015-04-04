@@ -7,6 +7,7 @@
 
 $mid-width: 768px;
 $theme-color: rgb(238, 242, 231);
+$main-font: 'Lato';
 
 @font-face {
 	font-family: CenturyGothic;
@@ -74,7 +75,7 @@ a {
 
 		>li {
 			text-align: center;
-			font-family: CenturyGothic;
+			font-family: $main-font;
 			font-size: 20px;
 			display: inline;
 			color: #505050;
@@ -111,11 +112,23 @@ a {
 	#toggle {
 		margin-top: 5px;
 	}
+
+	#ibeauty {
+		display: none;
+		font-family: $main-font;
+		font-weight: 700;
+		margin-top: -5px;
+		@media screen and (max-width: $mid-width) {
+			display: inherit;
+		}
+	}
 }
 
 
 // homepage style
 #homepage {
+
+	$radius : 20px;
 
 	#homepage-background {
 		z-index: -1;
@@ -125,8 +138,42 @@ a {
 		top: 20vh;
 		width: 80%;
 		margin-left: 10%;
-
 		position: absolute;
+
+		.title {
+			font-size: 18px;
+			padding-top: 25px;
+		}
+
+		.col-sm-offset-7 {
+			margin-left: 55%;
+		}
+
+		@media screen and (max-width: 953px) {
+			.col-sm-offset-7 {
+				margin-left: calc(100% - 400px);
+			}
+		}
+
+		@media screen and (max-width: $mid-width) {
+			.col-sm-offset-7 {
+				margin-left: 0%;
+			}
+		}
+
+		.content {
+			font-size: 14px;
+			width: 80%;
+			margin-left: 10%;
+			font-weight: 100;
+			text-align: left;
+			line-height: 160%;
+			padding-bottom: 25px;
+
+			strong {
+				font-weight: 700 !important;
+			}
+		}
 	}
 
 	.homepage-buttons {
@@ -138,17 +185,22 @@ a {
 
 	.homepage-button {
 		font: {
-			family: CenturyGothic;
+			family: $main-font;
 			weight: bold;
 			size: 20px;
 			color: #CCCCCC;
 		}
+		width: 400px;
 		background: $theme-color;
-		opacity: 0.8;
+		opacity: 0.9;
 		text-align: center;
 		margin-bottom: 10px;
 		height: 70px;
-		border-radius: 50px;
+
+		@media screen and (max-width: $mid-width) {
+			width: inherit;
+		}
+
 		.fa {
 			font-size: 25px;
 		}
@@ -157,5 +209,13 @@ a {
 			padding-top: 25px;
 		}
 	}
+	#homepage-intro {
+		border-radius: $radius $radius 0 0;
+		height: 100%;
+	}
+
+	#homepage-web {
+		border-radius: 0 0 $radius $radius;
+	}	
 }
 
