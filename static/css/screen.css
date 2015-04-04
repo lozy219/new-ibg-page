@@ -68,19 +68,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: 'Century Gothic';
+  font-family: CenturyGothic;
   src: url(../font/CenturyGothic.ttf);
 }
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
-/* line 37, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .navbar {
   position: fixed;
   top: 0;
@@ -91,6 +91,7 @@ a:hover {
   width: 100%;
   height: 54px;
   background: #eef2e7;
+  z-index: 20;
   font-weight: bold;
   font-size: 13px;
   color: #000;
@@ -105,7 +106,7 @@ a:hover {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 73, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .navbar > ul {
   list-style-type: none;
   margin: 0;
@@ -113,25 +114,25 @@ a:hover {
   float: right;
 }
 @media screen and (max-width: 768px) {
-  /* line 73, ../sass/screen.scss */
+  /* line 65, ../sass/screen.scss */
   .navbar > ul {
     display: none;
   }
 }
-/* line 83, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .navbar > ul > li {
   text-align: center;
-  font-family: 'Lato';
+  font-family: CenturyGothic;
   font-size: 20px;
   display: inline;
   color: #505050;
   margin: 0 18px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .navbar > ul > li:hover {
   color: #000000;
 }
-/* line 95, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .navbar > ul > li > a {
   margin: 0;
   text-decoration: none;
@@ -141,25 +142,65 @@ a:hover {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 101, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .navbar > ul > li > a:hover {
   color: #333;
 }
-/* line 108, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .navbar #logo {
   float: left;
-  margin-left: 10px;
+  margin-left: -10px;
   margin-top: -29px;
   width: 120px;
   height: 120px;
 }
 @media screen and (max-width: 768px) {
-  /* line 108, ../sass/screen.scss */
+  /* line 100, ../sass/screen.scss */
   .navbar #logo {
     display: none;
   }
 }
-/* line 119, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .navbar #toggle {
   margin-top: 5px;
+}
+
+/* line 120, ../sass/screen.scss */
+#homepage #homepage-background {
+  z-index: -1;
+}
+/* line 124, ../sass/screen.scss */
+#homepage .homepage-info {
+  top: 20vh;
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+}
+/* line 132, ../sass/screen.scss */
+#homepage .homepage-buttons {
+  top: 60vh;
+  text-align: right;
+  right: 40px;
+  width: 520px;
+}
+/* line 139, ../sass/screen.scss */
+#homepage .homepage-button {
+  font-family: CenturyGothic;
+  font-weight: bold;
+  font-size: 20px;
+  font-color: #CCCCCC;
+  background: #eef2e7;
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 70px;
+  border-radius: 50px;
+}
+/* line 152, ../sass/screen.scss */
+#homepage .homepage-button .fa {
+  font-size: 25px;
+}
+/* line 156, ../sass/screen.scss */
+#homepage .homepage-button > div {
+  padding-top: 25px;
 }
