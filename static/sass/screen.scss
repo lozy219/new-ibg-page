@@ -4,3 +4,108 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: url(../font/CenturyGothic.ttf);
+}
+
+@mixin box-sizing($box) {
+	box-sizing: $box;
+	-moz-box-sizing: $box;
+	-webkit-box-sizing: $box;
+}
+
+@mixin box-shadow($shadows...) {
+	box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	-webkit-box-sizing: $shadows;
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	};
+}
+
+
+// navbar style
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: block;
+	padding: 7px;
+	width: 100%;
+	height: 54px;
+	background: rgba(255, 255, 255, 0.5);
+	font: {
+		weight: bold;
+		size: 13px;
+	}
+	color: #000;
+	@include box-shadow(0px 2px 30px #CCCCCC);
+	@include box-sizing(border-box);
+	@include transition(all 500ms ease-in-out);
+	
+	&:hover {
+		background: rgb(238, 242, 231);
+		opacity: 1;
+		@include box-shadow(0px 2px 30px #888888);
+			font: {
+			weight: bold;
+			size: 13px;
+		}
+	}
+
+	>ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 8px 0 0 0;
+		float: right;
+
+		>li {
+			text-align: center;
+			font-family: 'Lato';
+			font-size: 20px;
+			display: inline;
+			color: #505050;
+			margin: 0 25px;
+
+			&:hover {
+				color: #000000;
+			}
+
+			>a {
+				margin: 0;
+				text-decoration: none;
+				color: #AAA;
+				@include transition(all 500ms ease-in-out);
+
+				&:hover {
+					color: #333;
+				}
+			}
+		}
+	}
+
+	#logo {
+		float: left;
+		margin-left: 10px;
+		margin-top: -12px;
+		width: 120px;
+		height: 120px;
+		position: relative;
+	}
+}
+
