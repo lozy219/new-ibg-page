@@ -71,16 +71,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Century Gothic';
   src: url(../font/CenturyGothic.ttf);
 }
-/* line 32, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
-/* line 35, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .navbar {
   position: absolute;
   top: 0;
@@ -105,7 +105,7 @@ a:hover {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .navbar:hover {
   background: #eef2e7;
   opacity: 1;
@@ -115,27 +115,33 @@ a:hover {
   font-weight: bold;
   font-size: 13px;
 }
-/* line 71, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .navbar > ul {
   list-style-type: none;
   margin: 0;
   padding: 8px 0 0 0;
   float: right;
 }
-/* line 77, ../sass/screen.scss */
+@media screen and (max-width: 768px) {
+  /* line 73, ../sass/screen.scss */
+  .navbar > ul {
+    display: none;
+  }
+}
+/* line 83, ../sass/screen.scss */
 .navbar > ul > li {
   text-align: center;
   font-family: 'Lato';
   font-size: 20px;
   display: inline;
   color: #505050;
-  margin: 0 25px;
+  margin: 0 18px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .navbar > ul > li:hover {
   color: #000000;
 }
-/* line 89, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .navbar > ul > li > a {
   margin: 0;
   text-decoration: none;
@@ -145,16 +151,15 @@ a:hover {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 95, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .navbar > ul > li > a:hover {
   color: #333;
 }
-/* line 102, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .navbar #logo {
   float: left;
   margin-left: 10px;
-  margin-top: -12px;
+  margin-top: -29px;
   width: 120px;
   height: 120px;
-  position: relative;
 }
