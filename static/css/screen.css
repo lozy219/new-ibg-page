@@ -87,9 +87,7 @@ a:hover {
   left: 0;
   text-align: center;
   display: block;
-  padding: 7px;
   width: 100%;
-  height: 54px;
   background: #eef2e7;
   z-index: 20;
   font-weight: bold;
@@ -106,34 +104,27 @@ a:hover {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 66, ../sass/screen.scss */
-.navbar > ul {
+/* line 65, ../sass/screen.scss */
+.navbar #navbar > ul {
   list-style-type: none;
   margin: 0;
-  padding: 8px 0 0 0;
   float: right;
 }
-@media screen and (max-width: 768px) {
-  /* line 66, ../sass/screen.scss */
-  .navbar > ul {
-    display: none;
-  }
-}
-/* line 76, ../sass/screen.scss */
-.navbar > ul > li {
+/* line 74, ../sass/screen.scss */
+.navbar #navbar > ul > li {
   text-align: center;
   font-family: "Lato";
   font-size: 20px;
   display: inline;
   color: #505050;
-  margin: 0 18px;
+  margin: 0 5px;
 }
-/* line 84, ../sass/screen.scss */
-.navbar > ul > li:hover {
+/* line 82, ../sass/screen.scss */
+.navbar #navbar > ul > li:hover {
   color: #000000;
 }
-/* line 88, ../sass/screen.scss */
-.navbar > ul > li > a {
+/* line 86, ../sass/screen.scss */
+.navbar #navbar > ul > li > a {
   margin: 0;
   text-decoration: none;
   color: #AAA;
@@ -142,29 +133,29 @@ a:hover {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 94, ../sass/screen.scss */
-.navbar > ul > li > a:hover {
+/* line 92, ../sass/screen.scss */
+.navbar #navbar > ul > li > a:hover {
   color: #333;
 }
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .navbar #logo {
   float: left;
   margin-left: -10px;
-  margin-top: -29px;
+  margin-top: -21px;
   width: 120px;
   height: 120px;
 }
 @media screen and (max-width: 768px) {
-  /* line 101, ../sass/screen.scss */
+  /* line 99, ../sass/screen.scss */
   .navbar #logo {
     display: none;
   }
 }
-/* line 112, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .navbar #toggle {
   margin-top: 5px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .navbar #ibeauty {
   display: none;
   font-family: "Lato";
@@ -172,45 +163,39 @@ a:hover {
   margin-top: -5px;
 }
 @media screen and (max-width: 768px) {
-  /* line 116, ../sass/screen.scss */
+  /* line 114, ../sass/screen.scss */
   .navbar #ibeauty {
     display: inherit;
   }
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #homepage #homepage-background {
   z-index: -1;
 }
-/* line 137, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 #homepage .homepage-info {
   top: 20vh;
   width: 80%;
   margin-left: 10%;
   position: absolute;
 }
-/* line 143, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 #homepage .homepage-info .title {
   font-size: 18px;
   padding-top: 25px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #homepage .homepage-info .col-sm-offset-7 {
-  margin-left: 55%;
-}
-@media screen and (max-width: 953px) {
-  /* line 153, ../sass/screen.scss */
-  #homepage .homepage-info .col-sm-offset-7 {
-    margin-left: calc(100% - 400px);
-  }
+  margin-left: calc(100% - 320px);
 }
 @media screen and (max-width: 768px) {
-  /* line 159, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   #homepage .homepage-info .col-sm-offset-7 {
-    margin-left: 0%;
+    margin-left: calc((100% - 320px) / 2);
   }
 }
-/* line 164, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #homepage .homepage-info .content {
   font-size: 14px;
   width: 80%;
@@ -220,24 +205,24 @@ a:hover {
   line-height: 160%;
   padding-bottom: 25px;
 }
-/* line 173, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #homepage .homepage-info .content strong {
   font-weight: 700 !important;
 }
-/* line 179, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #homepage .homepage-buttons {
   top: 60vh;
   text-align: right;
   right: 40px;
   width: 520px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #homepage .homepage-button {
   font-family: "Lato";
   font-weight: bold;
   font-size: 20px;
   font-color: #CCCCCC;
-  width: 400px;
+  width: 320px;
   background: #eef2e7;
   opacity: 0.9;
   text-align: center;
@@ -245,25 +230,26 @@ a:hover {
   height: 70px;
 }
 @media screen and (max-width: 768px) {
-  /* line 186, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   #homepage .homepage-button {
     width: inherit;
+    max-width: 320px;
   }
 }
-/* line 204, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #homepage .homepage-button .fa {
   font-size: 25px;
 }
-/* line 208, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #homepage .homepage-button > div {
   padding-top: 25px;
 }
-/* line 212, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #homepage #homepage-intro {
   border-radius: 20px 20px 0 0;
   height: 100%;
 }
-/* line 217, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 #homepage #homepage-web {
   border-radius: 0 0 20px 20px;
 }
