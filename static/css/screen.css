@@ -280,7 +280,7 @@ section {
   line-height: 190%;
 }
 /* line 255, ../sass/screen.scss */
-#about .about-container {
+#about .container {
   top: 90px;
   width: 681px;
   margin-left: calc((100% - 681px) / 2);
@@ -288,7 +288,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   /* line 255, ../sass/screen.scss */
-  #about .about-container {
+  #about .container {
     width: 80%;
     margin-left: 10%;
   }
@@ -340,7 +340,7 @@ section {
   }
 }
 /* line 305, ../sass/screen.scss */
-#app .app-container {
+#app .container {
   top: 90px;
   width: 681px;
   margin-left: calc((100% - 681px) / 2);
@@ -348,7 +348,49 @@ section {
 }
 @media screen and (max-width: 768px) {
   /* line 305, ../sass/screen.scss */
-  #app .app-container {
+  #app .container {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+/* line 313, ../sass/screen.scss */
+#partner {
+  font-family: "Lato";
+}
+/* line 316, ../sass/screen.scss */
+#partner .title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 320, ../sass/screen.scss */
+#partner .subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+/* line 324, ../sass/screen.scss */
+#partner .subtitle #free {
+  font-size: 30px;
+  color: #e97a69;
+}
+/* line 330, ../sass/screen.scss */
+#partner .intro {
+  margin-top: 80px;
+  font-weight: 900;
+  line-height: 150%;
+}
+/* line 336, ../sass/screen.scss */
+#partner .container {
+  top: 90px;
+  width: 681px;
+  margin-left: calc((100% - 681px) / 2);
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 336, ../sass/screen.scss */
+  #partner .container {
     width: 80%;
     margin-left: 10%;
   }

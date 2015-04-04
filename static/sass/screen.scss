@@ -252,7 +252,7 @@ section {
 		line-height: 190%;
 	}
 
-	.about-container {
+	.container {
 		top: 90px;
 		@include container();
 	}
@@ -302,7 +302,38 @@ section {
 		}
 	}
 
-	.app-container {
+	.container {
+		top: 90px;
+		@include container();
+	}
+}
+
+// partner style
+
+#partner {
+	font-family: $main-font;
+
+	.title {
+		@include title();
+	}
+
+	.subtitle {
+		font-size: 20px;
+		font-weight: 700;
+
+		#free {
+			font-size: 30px;
+			color: rgb(233, 122, 105);
+		}
+	}
+
+	.intro {
+		margin-top: 80px;
+		font-weight: 900;
+		line-height: 150%;
+	}
+
+	.container {
 		top: 90px;
 		@include container();
 	}
