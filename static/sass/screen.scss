@@ -562,3 +562,15 @@ section {
 		@include container();
 	}
 }
+
+// footer style
+#footer {
+	font-family: $main-font;
+	background: rgb(54, 54, 54);
+	height: 50px;
+	text-align: center;
+	color: #FFF;
+	top: 50px;
+	position: relative;
+	padding-top: 15px;
+}

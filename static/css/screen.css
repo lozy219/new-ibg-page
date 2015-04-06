@@ -621,3 +621,15 @@ section {
     margin-left: 10%;
   }
 }
+
+/* line 567, ../sass/screen.scss */
+#footer {
+  font-family: "Lato";
+  background: #363636;
+  height: 50px;
+  text-align: center;
+  color: #FFF;
+  top: 50px;
+  position: relative;
+  padding-top: 15px;
+}
