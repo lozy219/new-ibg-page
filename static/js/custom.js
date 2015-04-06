@@ -19,7 +19,6 @@ $(document).ready(function(){
 	$('#partnerForm').on( "submit", function( event ) {
   		event.preventDefault();
   		var userInputSet = $(this).serializeArray();
-  		console.log(userInputSet);
   		var data = {};
   		for (var i=0;i<userInputSet.length;i++) {
   			data[userInputSet[i].name] = escapeHtml(userInputSet[i].value);
@@ -40,12 +39,11 @@ $(document).ready(function(){
 	$('#feedbackForm').on( "submit", function( event ) {
   		event.preventDefault();
   		var userInputSet = $(this).serializeArray();
-  		console.log(userInputSet);
   		var data = {};
   		for (var i=0;i<userInputSet.length;i++) {
   			data[userInputSet[i].name] = escapeHtml(userInputSet[i].value);
   		}
-  		
+
   		$.post("destinationURL", data, function(resp) {
   			// do whatever you want after getting response
 		 	alert("Thank you for your response, and we will contact you soon!")
