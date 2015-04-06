@@ -182,30 +182,31 @@ section {
 /* line 157, ../sass/screen.scss */
 #homepage #homepage-background {
   z-index: -1;
+  overflow: hidden;
 }
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #homepage .homepage-info {
   top: 20vh;
   width: 80%;
   margin-left: 10%;
   position: absolute;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #homepage .homepage-info .title {
   font-size: 18px;
   padding-top: 25px;
 }
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #homepage .homepage-info .col-sm-offset-7 {
   margin-left: calc(100% - 320px);
 }
 @media screen and (max-width: 768px) {
-  /* line 177, ../sass/screen.scss */
+  /* line 178, ../sass/screen.scss */
   #homepage .homepage-info .col-sm-offset-7 {
     margin-left: calc((100% - 320px) / 2);
   }
 }
-/* line 182, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #homepage .homepage-info .content {
   font-size: 14px;
   width: 80%;
@@ -215,18 +216,18 @@ section {
   line-height: 160%;
   padding-bottom: 25px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 #homepage .homepage-info .content strong {
   font-weight: 700 !important;
 }
-/* line 197, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #homepage .homepage-buttons {
   top: 60vh;
   text-align: right;
   right: 40px;
   width: 520px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #homepage .homepage-button {
   font-family: "Lato";
   font-weight: bold;
@@ -240,46 +241,46 @@ section {
   height: 70px;
 }
 @media screen and (max-width: 768px) {
-  /* line 204, ../sass/screen.scss */
+  /* line 205, ../sass/screen.scss */
   #homepage .homepage-button {
     width: inherit;
     max-width: 320px;
   }
 }
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #homepage .homepage-button .fa {
   font-size: 25px;
 }
-/* line 227, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #homepage .homepage-button > div {
   padding-top: 25px;
 }
-/* line 231, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #homepage #homepage-intro {
   border-radius: 20px 20px 0 0;
   height: 100%;
 }
-/* line 236, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 #homepage #homepage-web {
   border-radius: 0 0 20px 20px;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #about {
   font-family: "Lato";
 }
-/* line 247, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #about .title {
   font-size: 40px;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 251, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #about .content {
   line-height: 190%;
 }
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #about .container {
   top: 90px;
   width: 681px;
@@ -287,59 +288,85 @@ section {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 255, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
   #about .container {
     width: 80%;
     margin-left: 10%;
   }
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #app {
   font-family: "Lato";
 }
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 #app .title {
   font-size: 40px;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 271, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #app .intro {
   margin-top: 80px;
+  margin-bottom: 60px;
   font-weight: 900;
   line-height: 150%;
 }
-/* line 277, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 #app .download {
   margin-top: 10px;
 }
-/* line 280, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 #app .download .download-pic {
   height: 67px;
 }
-/* line 284, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #app .download #qr-code {
   float: right;
 }
 @media screen and (max-width: 768px) {
-  /* line 289, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   #app .download .download-pic {
     height: auto;
     width: 200px;
     margin-top: 5px;
   }
-  /* line 295, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   #app .download .pic {
     text-align: center;
   }
-  /* line 299, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   #app .download #qr-code {
     float: inherit;
   }
 }
-/* line 305, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
+#app .demo-whole .demo-text .col-sm-4 {
+  width: 26.6666666%;
+  margin-left: 3.333333333%;
+  margin-right: 3.333333333%;
+}
+/* line 318, ../sass/screen.scss */
+#app .demo-whole .demo-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+/* line 327, ../sass/screen.scss */
+#app .demo-whole .demo-content {
+  text-align: center;
+  font-weight: 200;
+  line-height: 150%;
+}
+/* line 333, ../sass/screen.scss */
+#app .demo-whole #sprite {
+  width: 100%;
+}
+/* line 338, ../sass/screen.scss */
 #app .container {
   top: 90px;
   width: 681px;
@@ -347,77 +374,77 @@ section {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 305, ../sass/screen.scss */
+  /* line 338, ../sass/screen.scss */
   #app .container {
     width: 80%;
     margin-left: 10%;
   }
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #partner {
   font-family: "Lato";
 }
-/* line 316, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #partner .title {
   font-size: 40px;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 320, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #partner .subtitle {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* line 325, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 #partner .subtitle #free {
   font-size: 30px;
   color: #e97a69;
 }
-/* line 331, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 #partner .description {
   margin-bottom: 80px;
   font-weight: 100;
 }
-/* line 334, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #partner .description strong {
   font-weight: 600;
 }
-/* line 339, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 #partner .form {
   width: 100%;
 }
-/* line 342, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 #partner .form .avatar .avatar-img {
   width: 100%;
 }
-/* line 348, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 #partner .form .contact .instruction {
   font-weight: 100;
   margin-bottom: 32px;
 }
-/* line 353, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 #partner .form .contact .form-group {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 357, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 #partner .form .contact .form-group .form-control {
   border: 1px solid #bdc3c7;
 }
-/* line 359, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 #partner .form .contact .form-group .form-control:focus {
   border: 1px solid #1ABC9C;
 }
-/* line 367, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 #partner .intro {
   margin-top: 80px;
   font-weight: 900;
   line-height: 150%;
 }
-/* line 373, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 #partner .container {
   top: 90px;
   width: 681px;
@@ -425,7 +452,7 @@ section {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 373, ../sass/screen.scss */
+  /* line 406, ../sass/screen.scss */
   #partner .container {
     width: 80%;
     margin-left: 10%;

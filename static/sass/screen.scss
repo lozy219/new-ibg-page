@@ -156,6 +156,7 @@ section {
 
 	#homepage-background {
 		z-index: -1;
+		overflow: hidden;
 	}
 
 	.homepage-info {
@@ -270,6 +271,7 @@ section {
 
 	.intro {
 		margin-top: 80px;
+		margin-bottom: 60px;
 		font-weight: 900;
 		line-height: 150%;
 	}
@@ -299,6 +301,37 @@ section {
 			#qr-code {
 				float: inherit;
 			}
+		}
+	}
+
+	
+
+	.demo-whole {
+		.demo-text {
+			.col-sm-4 {
+				width: 26.6666666%;
+				margin-left: 3.333333333%;
+				margin-right: 3.333333333%;
+			}
+		}
+
+		.demo-title {
+			font-size: 27px;
+			font-weight: 700;
+			margin-top: -30px;
+			margin-bottom: 50px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.demo-content {
+			text-align: center;
+			font-weight: 200;
+			line-height: 150%;
+		}
+
+		#sprite {
+			width: 100%;
 		}
 	}
 
