@@ -369,19 +369,55 @@ section {
 #partner .subtitle {
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
-/* line 324, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 #partner .subtitle #free {
   font-size: 30px;
   color: #e97a69;
 }
-/* line 330, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
+#partner .description {
+  margin-bottom: 80px;
+  font-weight: 100;
+}
+/* line 334, ../sass/screen.scss */
+#partner .description strong {
+  font-weight: 600;
+}
+/* line 339, ../sass/screen.scss */
+#partner .form {
+  width: 100%;
+}
+/* line 342, ../sass/screen.scss */
+#partner .form .avatar .avatar-img {
+  width: 100%;
+}
+/* line 348, ../sass/screen.scss */
+#partner .form .contact .instruction {
+  font-weight: 100;
+  margin-bottom: 32px;
+}
+/* line 353, ../sass/screen.scss */
+#partner .form .contact .form-group {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 357, ../sass/screen.scss */
+#partner .form .contact .form-group .form-control {
+  border: 1px solid #bdc3c7;
+}
+/* line 359, ../sass/screen.scss */
+#partner .form .contact .form-group .form-control:focus {
+  border: 1px solid #1ABC9C;
+}
+/* line 367, ../sass/screen.scss */
 #partner .intro {
   margin-top: 80px;
   font-weight: 900;
   line-height: 150%;
 }
-/* line 336, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 #partner .container {
   top: 90px;
   width: 681px;
@@ -389,7 +425,7 @@ section {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 336, ../sass/screen.scss */
+  /* line 373, ../sass/screen.scss */
   #partner .container {
     width: 80%;
     margin-left: 10%;
