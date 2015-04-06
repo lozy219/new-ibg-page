@@ -252,21 +252,21 @@
 							</div>
 						</div>
 						<div class="row">
-							<form>
+							<form id="partnerForm">
 								<div class="form-group">
-									<input type="text" placeholder="name" class="form-control" />
+									<input type="text" placeholder="name" name="name" class="form-control" required/>
 								</div>
 
 								<div class="form-group">
-									<input type="email" placeholder="email" class="form-control" />
+									<input type="email" placeholder="email" name="email" class="form-control" required/>
 								</div>
 
 								<div class="form-group">
-									<input type="text" placeholder="phone" class="form-control" />
+									<input type="text" placeholder="phone" name="phone" class="form-control" required/>
 								</div>
 
 								<div class="form-group">
-									<input type="submit" value="count me in" class="btn btn-block btn-lg btn-info" />
+									<input type="submit" id="btn-partner" value="count me in" class="btn btn-block btn-lg btn-info" />
 								</div>
 							</form>
 						</div>
@@ -307,31 +307,31 @@
 
 				<div class="form">
 					<div class="row">
-						<form>
+						<form id="feedbackForm">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" placeholder="first name" class="form-control" />
+									<input type="text" placeholder="first name" name="firstName" class="form-control" />
 								</div>
 
 								<div class="form-group">
-									<input type="text" placeholder="last name" class="form-control" />
+									<input type="text" placeholder="last name" name="lastName" class="form-control" />
 								</div>
 
 								<div class="form-group">
-									<input type="email" placeholder="email" class="form-control" />
+									<input type="email" placeholder="email" name="email" class="form-control" />
 								</div>
 							</div>
 
 							<div class="col-md-6">
 								<div class="form-group">
-									<textarea class="form-control" rows="6" placeholder="let us know what you think :)"></textarea>
+									<textarea class="form-control" name="feedback" rows="6" placeholder="let us know what you think :)"></textarea>
 								</div>
 							</div>
 
 							<div class="submit">
 								<hr>
 								<div class="form-group">
-									<input type="submit" value="submit" class="btn btn-block btn-lg btn-info" />
+									<input type="submit" id="btn-feedback" value="submit" class="btn btn-block btn-lg btn-info" />
 								</div>
 							</div>
 						</form>

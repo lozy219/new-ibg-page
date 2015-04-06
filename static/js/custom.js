@@ -13,7 +13,49 @@ $(document).ready(function(){
 	// 	}, 1500, 'easeInOutExpo');
 	// 	event.preventDefault();
 	// });
-});
+	
+
+	// Form: be a partner
+	$('#partnerForm').on( "submit", function( event ) {
+  		event.preventDefault();
+  		var userInputSet = $(this).serializeArray();
+  		console.log(userInputSet);
+  		var data = {};
+  		for (var i=0;i<userInputSet.length;i++) {
+  			data[userInputSet[i].name] = escapeHtml(userInputSet[i].value);
+  		}
+
+  		$.post("destinationURL", data, function(resp) {
+  			// do whatever you want after getting response
+		 	alert("Thank you for your response, and we will contact you soon!")
+		 	// clean form input
+		 	$('#partnerForm').each(function(){ 
+			    this.reset();
+			});
+		});
+	});
+
+
+	// Form: feedback
+	$('#feedbackForm').on( "submit", function( event ) {
+  		event.preventDefault();
+  		var userInputSet = $(this).serializeArray();
+  		console.log(userInputSet);
+  		var data = {};
+  		for (var i=0;i<userInputSet.length;i++) {
+  			data[userInputSet[i].name] = escapeHtml(userInputSet[i].value);
+  		}
+  		
+  		$.post("destinationURL", data, function(resp) {
+  			// do whatever you want after getting response
+		 	alert("Thank you for your response, and we will contact you soon!")
+		 	// clean form input
+		 	$('#feedbackForm').each(function(){ 
+			    this.reset();
+			});
+		});
+	});
+}); 
 
 function resizeBackground() {
 	var width = $(window).width();
@@ -25,4 +67,13 @@ function resizeBackground() {
 		$('#homepage-background').css('height', '100vh');
 		$('#homepage-background').css('width', 'auto');
 	}
+}
+
+function escapeHtml(text) {
+  return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
 }
