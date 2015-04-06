@@ -71,6 +71,7 @@ a {
 
 body {
 	background: $theme-color;
+	overflow-x: hidden !important;
 }
 
 section {
@@ -494,7 +495,7 @@ section {
 	.article {
 
 		@include box-shadow($content-box-shadow);
-		
+
 		$height : 600px;
 		background: #FFF;
 		border-radius: $radius;
