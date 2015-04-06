@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 
-$container-width : 681px;
+$container-width : 711px;
 $mid-width: 768px;
 $theme-color: rgb(238, 242, 231);
 $content-box-shadow: 0px 1px 10px #aaaaaa;
@@ -253,6 +253,7 @@ section {
 #about {
 
 	font-family: $main-font;
+
 	.title {
 		@include title();
 	}
@@ -454,6 +455,98 @@ section {
 	.container {
 		top: 90px;
 		@include container();
+	}
+}
+
+// tips style
+
+#tips {
+	font-family: $main-font;
+
+	.title {
+		@include title();
+	}
+
+	.subtitle {
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 20px;
+
+		#free {
+			font-size: 30px;
+			color: rgb(233, 122, 105);
+		}
+	}
+
+	.description {
+		margin-bottom: 80px;
+		font-weight: 100;
+		strong {
+			font-weight: 600;
+		}
+	}
+
+	.container {
+		top: 90px;
+		@include container();
+	}
+
+	.article {
+		$height : 600px;
+		background: #FFF;
+		border-radius: $radius;
+		height: $height;
+		padding-right: 15px;
+		.nav {
+			background: rgb(231, 122, 105);
+			height: $height;
+			border-radius: $radius 0 0 $radius;
+			padding-right: 0px !important;
+
+			.content-group {
+				margin-top: 60px;
+				margin-left: 25px;
+
+				.item {
+					margin-bottom: 40px;
+					color: #FFF;
+				}
+			}
+		}
+
+		.main-article {
+			height: $height;
+			overflow-y: scroll;
+
+			.article-title {
+				margin-top: 8px;
+				margin-bottom: -10px;
+				font-size: 18px;
+				font-weight: 700;
+
+				.author {
+					font-size: 12px;
+				}
+			}
+
+			.content-pics {
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+			}
+
+			.article-content {
+				font-size: 14px;
+				line-height: 150%;
+
+				.pic {
+					padding: 0;
+				}
+
+				.article-img {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
 

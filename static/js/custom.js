@@ -13,6 +13,7 @@ $(document).ready(function(){
 	// 	}, 1500, 'easeInOutExpo');
 	// 	event.preventDefault();
 	// });
+
 	
 
 	// Form: be a partner
