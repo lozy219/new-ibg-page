@@ -457,32 +457,35 @@ section {
 /* line 421, ../sass/screen.scss */
 #partner .form .avatar .avatar-img {
   width: 100%;
+  box-shadow: 0px 1px 10px #aaaaaa;
+  -moz-box-shadow: 0px 1px 10px #aaaaaa;
+  -webkit-box-sizing: 0px 1px 10px #aaaaaa;
 }
-/* line 427, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 #partner .form .contact .instruction {
   font-weight: 100;
   margin-bottom: 32px;
 }
-/* line 432, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 #partner .form .contact .form-group {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 436, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 #partner .form .contact .form-group .form-control {
   border: 1px solid #bdc3c7;
 }
-/* line 438, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 #partner .form .contact .form-group .form-control:focus {
   border: 1px solid #1ABC9C;
 }
-/* line 446, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 #partner .intro {
   margin-top: 80px;
   font-weight: 900;
   line-height: 150%;
 }
-/* line 452, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 #partner .container {
   top: 90px;
   width: 681px;
@@ -490,7 +493,7 @@ section {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 452, ../sass/screen.scss */
+  /* line 453, ../sass/screen.scss */
   #partner .container {
     width: 80%;
     margin-left: 10%;
