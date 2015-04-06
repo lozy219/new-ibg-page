@@ -492,6 +492,9 @@ section {
 	}
 
 	.article {
+
+		@include box-shadow($content-box-shadow);
+		
 		$height : 600px;
 		background: #FFF;
 		border-radius: $radius;
@@ -511,6 +514,10 @@ section {
 					margin-bottom: 40px;
 					color: #FFF;
 				}
+			}
+
+			@media screen and (max-width: $mid-width) {
+				display: none;
 			}
 		}
 

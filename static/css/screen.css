@@ -547,87 +547,96 @@ section {
 }
 /* line 494, ../sass/screen.scss */
 #tips .article {
+  box-shadow: 0px 1px 10px #aaaaaa;
+  -moz-box-shadow: 0px 1px 10px #aaaaaa;
+  -webkit-box-sizing: 0px 1px 10px #aaaaaa;
   background: #FFF;
   border-radius: 20px;
   height: 600px;
   padding-right: 15px;
 }
-/* line 500, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 #tips .article .nav {
   background: #e77a69;
   height: 600px;
   border-radius: 20px 0 0 20px;
   padding-right: 0px !important;
 }
-/* line 506, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 #tips .article .nav .content-group {
   margin-top: 60px;
   margin-left: 25px;
 }
-/* line 510, ../sass/screen.scss */
+/* line 513, ../sass/screen.scss */
 #tips .article .nav .content-group .item {
   margin-bottom: 40px;
   color: #FFF;
 }
-/* line 517, ../sass/screen.scss */
+@media screen and (max-width: 768px) {
+  /* line 503, ../sass/screen.scss */
+  #tips .article .nav {
+    display: none;
+  }
+}
+/* line 524, ../sass/screen.scss */
 #tips .article .main-article {
   height: 600px;
   overflow-y: scroll;
 }
-/* line 521, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 #tips .article .main-article .article-title {
   margin-top: 8px;
   margin-bottom: -10px;
   font-size: 18px;
   font-weight: 700;
 }
-/* line 527, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 #tips .article .main-article .article-title .author {
   font-size: 12px;
 }
-/* line 532, ../sass/screen.scss */
+/* line 539, ../sass/screen.scss */
 #tips .article .main-article .content-pics {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-/* line 537, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 #tips .article .main-article .article-content {
   font-size: 14px;
   line-height: 150%;
 }
-/* line 541, ../sass/screen.scss */
+/* line 548, ../sass/screen.scss */
 #tips .article .main-article .article-content .pic {
   padding: 0;
 }
-/* line 545, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 #tips .article .main-article .article-content .article-img {
   width: 100%;
 }
 
-/* line 554, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
 #contact {
   font-family: "Lato";
 }
-/* line 557, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 #contact .title {
   font-size: 40px;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 561, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 #contact .subtitle {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 50px;
 }
-/* line 567, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 #contact .subtitle #free {
   font-size: 30px;
   color: #e97a69;
 }
-/* line 573, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 #contact .form {
   width: calc(100% + 30px);
   margin-left: -15px !important;
@@ -639,42 +648,42 @@ section {
   -moz-box-shadow: 0px 1px 10px #aaaaaa;
   -webkit-box-sizing: 0px 1px 10px #aaaaaa;
 }
-/* line 581, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 #contact .form .instruction {
   font-weight: 100;
   margin-bottom: 32px;
 }
-/* line 588, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 #contact .form .form-group .form-control {
   border: 1px solid #bdc3c7;
 }
-/* line 590, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 #contact .form .form-group .form-control:focus {
   border: 1px solid #1ABC9C;
 }
-/* line 596, ../sass/screen.scss */
+/* line 603, ../sass/screen.scss */
 #contact .form textarea {
   height: 166px;
   resize: none;
 }
-/* line 601, ../sass/screen.scss */
+/* line 608, ../sass/screen.scss */
 #contact .form .submit {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 604, ../sass/screen.scss */
+/* line 611, ../sass/screen.scss */
 #contact .form .submit hr {
   border: 1px solid #BEBEBE;
   border-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 610, ../sass/screen.scss */
+  /* line 617, ../sass/screen.scss */
   #contact .form .submit input[type=submit] {
     width: 100px;
     float: right;
   }
 }
-/* line 620, ../sass/screen.scss */
+/* line 627, ../sass/screen.scss */
 #contact .contact-info {
   background: #FFF;
   border-radius: 20px;
@@ -682,36 +691,36 @@ section {
   -moz-box-shadow: 0px 1px 10px #aaaaaa;
   -webkit-box-sizing: 0px 1px 10px #aaaaaa;
 }
-/* line 626, ../sass/screen.scss */
+/* line 633, ../sass/screen.scss */
 #contact .contact-info .contact-address .heading {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 633, ../sass/screen.scss */
+/* line 640, ../sass/screen.scss */
 #contact .contact-info .contact-address .address {
   font-size: 12px;
   line-height: 150%;
 }
-/* line 639, ../sass/screen.scss */
+/* line 646, ../sass/screen.scss */
 #contact .contact-info .contact-map {
   padding: 0;
 }
-/* line 641, ../sass/screen.scss */
+/* line 648, ../sass/screen.scss */
 #contact .contact-info .contact-map .map-img {
   border-radius: 0 20px 20px 0;
   width: 100%;
   margin-bottom: -2px;
 }
 @media screen and (max-width: 768px) {
-  /* line 641, ../sass/screen.scss */
+  /* line 648, ../sass/screen.scss */
   #contact .contact-info .contact-map .map-img {
     margin-top: 10px;
     border-radius: 0 0 20px 20px;
   }
 }
-/* line 653, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 #contact .container {
   top: 90px;
   width: 711px;
@@ -719,14 +728,14 @@ section {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 653, ../sass/screen.scss */
+  /* line 660, ../sass/screen.scss */
   #contact .container {
     width: 80%;
     margin-left: 10%;
   }
 }
 
-/* line 660, ../sass/screen.scss */
+/* line 667, ../sass/screen.scss */
 #footer {
   font-family: "Lato";
   background: #363636;
