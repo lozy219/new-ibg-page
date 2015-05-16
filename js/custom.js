@@ -25,7 +25,11 @@ $(document).ready(function(){
   			data[userInputSet[i].name] = escapeHtml(userInputSet[i].value);
   		}
 
-  		$.post("destinationURL", data, function(resp) {
+  		$.post("/api/contact/partner-reg", data, function(resp) {
+			if (resp.status != 0) {
+				alert(resp.message);
+				return;
+			}
   			// do whatever you want after getting response
 		 	alert("Thank you for your response, and we will contact you soon!")
 		 	// clean form input
@@ -45,9 +49,13 @@ $(document).ready(function(){
   			data[userInputSet[i].name] = escapeHtml(userInputSet[i].value);
   		}
 
-  		$.post("destinationURL", data, function(resp) {
+  		$.post("/api/contact/feedback", data, function(resp) {
+			if (resp.status != 0) {
+				alert(resp.message);
+				return;
+			}
   			// do whatever you want after getting response
-		 	alert("Thank you for your response, and we will contact you soon!")
+		 	alert("Thank you for your feedback, we value your opinion and will process it ASAP!");
 		 	// clean form input
 		 	$('#feedbackForm').each(function(){ 
 			    this.reset();
