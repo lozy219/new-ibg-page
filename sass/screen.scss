@@ -71,6 +71,7 @@ a {
 }
 
 html, body {
+	position: relative;
 	background: $theme-color;
 	overflow-x: hidden !important;
 }
