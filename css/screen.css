@@ -217,7 +217,7 @@ section {
     margin-left: calc((100% - 320px) / 2);
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   /* line 204, ../sass/screen.scss */
   #homepage .homepage-info .col-sm-offset-7 {
     margin-left: 0px;
