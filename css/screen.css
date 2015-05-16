@@ -81,7 +81,7 @@ a:hover {
 }
 
 /* line 73, ../sass/screen.scss */
-body {
+html, body {
   background: #eef2e7;
   overflow-x: hidden !important;
 }
