@@ -153,7 +153,7 @@ section {
 		display: none;
 		font-family: $main-font;
 		font-weight: 700;
-		margin-top: -5px;
+		margin-top: 3px;
 		@media screen and (max-width: $mid-width) {
 			display: inherit;
 		}
@@ -245,7 +245,7 @@ section {
 		}
 
 		>div {
-			padding-top: 19px;
+			padding-top: 22px;
 		}
 	}
 	#homepage-intro {

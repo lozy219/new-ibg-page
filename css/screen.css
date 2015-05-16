@@ -172,7 +172,7 @@ section {
   display: none;
   font-family: "Lato";
   font-weight: 700;
-  margin-top: -5px;
+  margin-top: 3px;
 }
 @media screen and (max-width: 768px) {
   /* line 152, ../sass/screen.scss */
@@ -263,7 +263,7 @@ section {
 }
 /* line 247, ../sass/screen.scss */
 #homepage .homepage-button > div {
-  padding-top: 19px;
+  padding-top: 22px;
 }
 /* line 251, ../sass/screen.scss */
 #homepage #homepage-intro {
