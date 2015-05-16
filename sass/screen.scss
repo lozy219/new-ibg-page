@@ -194,24 +194,6 @@ section {
 			margin-left: calc(100% - #{$button-width});
 		}
 
-		@media screen and (max-width: $mid-width) {
-			.col-sm-offset-7 {
-				margin-left: calc((100% - #{$button-width}) / 2);
-			}
-		}
-
-		@media screen and (max-width: 360px) {
-			.col-sm-offset-7 {
-				margin-left: 0px;
-			}
-
-			content {
-				font-size: 14px;
-				width: 90%;
-				margin-left: 5%;
-			}
-		}
-
 		.content {
 			font-size: 14px;
 			width: 80%;
@@ -225,6 +207,25 @@ section {
 				font-weight: 700 !important;
 			}
 		}
+
+		@media screen and (max-width: $mid-width) {
+			.col-sm-offset-7 {
+				margin-left: calc((100% - #{$button-width}) / 2);
+			}
+		}
+
+		@media screen and (max-width: 360px) {
+			.col-sm-offset-7 {
+				margin-left: 0px;
+			}
+
+			.content {
+				font-size: 14px;
+				width: 90%;
+				margin-left: 5%;
+			}
+		}
+
 	}
 
 	.homepage-buttons {
