@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+	$.smartbanner({
+		title: 'iBeautyGuru',
+		author: 'iBeautyGuru'
+	});
+
 	resizeBackground();
 	$(window).resize(resizeBackground);
 
